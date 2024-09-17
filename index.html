@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Rock Paper Scissors</h1>
+    <div class="container">
+      <div class="output">
+        <div class="player1">
+          <h2 id="playerOneText">You</h2>
+          <img id="playerOneOutput" class="hidden" src="" alt="player one pick">
+        </div>
+        <div class="player2">
+          <h2 id="playerTwoText">Opponent</h2>
+          <img id="playerTwoOutput" class="hidden" src="" alt="player two pick">
+        </div>
+      </div>
+      <div class="options">
+        <div data-options id="rock" class="box rock"></div>
+        <div data-options id="paper" class="box paper"></div>
+        <div data-options id="scissors" class="box scissors"></div>
+        <button id="playAgain" class="play-again invisible">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <footer>©2023 Abainza. All rights reserved</footer>
+</body>
+</html>

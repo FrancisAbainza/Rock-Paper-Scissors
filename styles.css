@@ -1,0 +1,184 @@
+:root {
+  --primary: #00B2FF;
+  --secondary: #e3fcff;
+}
+
+* {
+  font-family: 'Fuzzy Bubbles', cursive;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  position: relative;
+  background-color: var(--primary);
+  min-height: 100vh;
+  padding-top: 2em;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 70em;
+  margin: auto;
+}
+
+h1 {
+  font-size: 4.267rem;
+  text-align: center;
+}
+
+/* ===================================================== */
+.container {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 1em 1em ;
+}
+
+.output {
+  display: flex;
+}
+
+.output > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20em;
+}
+
+.output > div > h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.output > div > img {
+  height: 5em;
+}
+
+.player1 {
+  border-right: 2.5px solid black;
+}
+
+.player2 {
+  border-left: 2.5px solid black;
+}
+
+/* ===================================================== */
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  margin-top: 2.667em;
+  height: 12em;
+}
+
+.box {
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 12em;
+  height: 12em;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #cbf4f8;
+}
+
+.rock {
+  background: var(--secondary) url(./images/rock.svg) no-repeat center;
+  background-size: 5em;
+}
+
+.paper {
+  background: var(--secondary) url(./images/paper.png) no-repeat center;
+  background-size: 5em;
+
+}
+
+.scissors {
+  background: var(--secondary) url(./images/scissors.svg) no-repeat center;
+  background-size: 5em;
+}
+
+.play-again {
+  background-color: lightgreen;
+  border: 3px solid black;
+  border-radius: 25px;
+  font-size: 2rem;
+  width: 10em;
+  height: 4em; 
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background-color: rgb(180, 240, 180);
+}
+
+/* ===================================================== */
+footer {
+  margin-top: .5em;
+  text-align: right;
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  .output > div > img {
+    height: 15em;
+  }
+
+  .options {
+    gap: 2em;
+  }
+
+  .rock {
+    background-size: 10em;
+  }
+  
+  .paper {
+    background-size: 10em;
+  
+  }
+  
+  .scissors {
+    background-size: 10em;
+  }
+}
+
+@media only screen and (min-height: 750px)  {
+  body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+  }
+}
